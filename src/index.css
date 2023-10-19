@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Annie+Use+Your+Telescope&family=Macondo&family=Mooli&display=swap');
+
+body {
+  font-family: 'Amarante', serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(-45deg, #52c7ee, #3c75e7, #23a6d5, #234fd5);
+  background-size: 400% 400%;
+  animation: gradient 180s ease infinite;
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.app{
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+
+}
+
+.site-examples-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
