@@ -1,14 +1,20 @@
-import WebsiteExamples from './WebsiteExamples'
+
+import HeroSlider from './HeroSlider'
 import Header from './Header'
-import Contact from './Contact'
+import Intro from './Intro'
+import WebsiteExamples from './WebsiteExamples'
 
 const App = () => {
+
   return (
+    <>
     <div className="app">
       <Header />
-      <Contact />
+      <Intro />
+      <HeroSlider />
       <WebsiteExamples />
     </div>
+    </>
   );
 }
 

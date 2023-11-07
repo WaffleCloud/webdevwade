@@ -2,7 +2,7 @@
 
 const WebsiteExamples = () => {
     return (
-        <div>
+        <div className="site-special-container box">
             Website Special <br/>
             Each design below $50<br/>
 

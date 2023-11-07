@@ -1,34 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Amarante&family=Annie+Use+Your+Telescope&family=Macondo&family=Mooli&display=swap');
 
-body {
-  font-family: 'Amarante', serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(-45deg, #52c7ee, #3c75e7, #23a6d5, #234fd5);
-  background-size: 400% 400%;
-  animation: gradient 180s ease infinite;
-  height: 100vh;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .app{
+  text-align: center;
   background: none;
   display: flex;
   flex-direction: column;
@@ -36,10 +15,71 @@ body {
   align-items: center;
 }
 
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* background-image: linear-gradient(-45deg, #52eed1, #2a6256, #10493d, #23d5b1); */
+  background: #7b839a;
+  background-size: 400% 400%;
+  animation: color 30s ease infinite;
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes color {
+  0%  { background:  #7b839a; }
+  25%   { background: #72a69d; }
+  40%  { background: #83a9b2; }
+  65%  { background:  #7b839a; }
+  85%  { background: #8a82ab; }
+}
+
+.box {
+  align-items: center;
+  background-color: rgba(255,255,255,0.1);
+ border: 1px solid #7b839a;
+ border-radius: 30px;
+ box-shadow: 0px 0px 5px rgba(35, 72, 35, 0.5);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ margin: 20px;
+ text-align: center;
+ width: 700px;
+ height: 100px;
+ padding: 50px;
+}
+
 .header {
   position: fixed;
   top: 0;
+}
 
+.jardin-modal {
+  align-items: center;
+  background-color: rgba(255,255,255,0.5);
+  color:rgb(35, 72, 35);
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 900;
+  border-radius: 10px;
 }
 
 .site-examples-container{
